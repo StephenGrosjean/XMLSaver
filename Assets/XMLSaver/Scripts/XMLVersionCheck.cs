@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-
+/// <summary>
+/// XMLSave Check version
+/// </summary>
 public class XMLVersionCheck : MonoBehaviour {
 
     //SINGLETON//
