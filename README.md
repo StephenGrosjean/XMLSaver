@@ -3,12 +3,6 @@
 XMLSaver for unity
 
 ## Usage (v0.2)
-
-### Installation
-Drag and drop the XMLSave and XMLVersionCheck(Optional) prefabs into your scene.
-
-### Base functions
-
 ##### Save XML file
 ```csharp
 XMLSave.instance.Save();
