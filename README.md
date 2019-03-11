@@ -1,4 +1,4 @@
-# XMLSaver ![Version](https://img.shields.io/badge/Version-0.2-brightgreen.svg) ![UnityVersion](https://img.shields.io/badge/UnityVersion-2018.3.0f2-blue.svg)
+# XMLSaver ![Version](https://img.shields.io/badge/Version-0.2-brightgreen.svg) ![UnityVersion](https://img.shields.io/badge/Unity-2018.3.6f1-blue.svg)
 
 XMLSaver for unity
 
