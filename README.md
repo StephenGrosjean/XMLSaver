@@ -53,7 +53,7 @@ XMLSave.instance.FindVector3(string name, out Vector3 result);
 #### v0.3
 + Added editor window to inititalize the XMLSaver
 
-### v0.2
+#### v0.2
 + Modified all the scripts to add functions to find specific data in the dataset
 + Added datapath depending on platform
 + Added multiple files for class (Cleaner code)
