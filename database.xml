@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<DataBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Int>
+    <Int>
+      <name>exempleValue</name>
+      <value>256</value>
+    </Int>
+  </Int>
+  <Float />
+  <String />
+  <Vector2D />
+  <Vector3D />
+</DataBase>
