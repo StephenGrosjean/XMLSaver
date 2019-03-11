@@ -1,9 +1,7 @@
 # XMLSaver ![Version](https://img.shields.io/badge/Version-0.3-brightgreen.svg) ![UnityVersion](https://img.shields.io/badge/Unity-2018.3.6f1-blue.svg)
-***
 
 XMLSaver for unity
 
-***
 
 ## Usage (v0.3)
 Use the editor window to inititalize the XMLSave System (XMLSaver/inititalize)
@@ -42,7 +40,6 @@ XMLSave.instance.FindVector2(string name, out Vector2 result);
 ```csharp
 XMLSave.instance.FindVector3(string name, out Vector3 result);
 ```
-***
 
 ## Links
 * [Version 0.3](https://github.com/StephenGrosjean/XMLSaver/blob/master/Assets/PackageBuild/V03.unitypackage)
@@ -51,7 +48,6 @@ XMLSave.instance.FindVector3(string name, out Vector3 result);
 
 * [Version 0.1](https://github.com/StephenGrosjean/XMLSaver/blob/master/Assets/PackageBuild/V01.unitypackage)
 
-***
 
 ## Changelog
 #### v0.3
