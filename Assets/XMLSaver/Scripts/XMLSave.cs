@@ -66,6 +66,27 @@ public class XMLSave : MonoBehaviour {
             Debug.LogErrorFormat("<b><size=12><color=red>ERROR : File " + nameFile + " does not exist at path : </color><color=green> " + dataPath + nameFile + " </color> <color=red> (Maybe you did not save?) </color></size></b>");
         }
     }
+    public void Load(string fileName) {
+        CheckDataPath();
+
+        //open xml file
+        XmlSerializer serializer = new XmlSerializer(typeof(DataBase));
+
+        //Create Stream
+        if (File.Exists(dataPath + fileName)) {
+            FileStream stream = new FileStream(dataPath + fileName, FileMode.Open);
+
+            //Deserialize DB
+            dataBase = serializer.Deserialize(stream) as DataBase;
+
+            //Close the stream
+            stream.Close();
+        }
+        else {
+            //Error message
+            Debug.LogErrorFormat("<b><size=12><color=red>ERROR : File " + fileName + " does not exist at path : </color><color=green> " + dataPath + fileName + " </color> <color=red> (Maybe you did not save?) </color></size></b>");
+        }
+    }
 
     //Set the DataPath depending of the platform
     void CheckDataPath() {
@@ -79,54 +100,97 @@ public class XMLSave : MonoBehaviour {
         }
     }
 
-    public void FindInt(string name, out int result) {
-        foreach (Int data in dataBase.IntDB) {
+    //GET
+    public int GetInt(string name) {
+        foreach (XML_Int data in dataBase.IntDB) {
             if (data.name == name) {
-                result = data.value;
-                return;
+                return data.value;
             }
         }
-        result = 0;
+        return 0;
     }
 
-    public void FindFloat(string name, out float result) {
-        foreach (Float data in dataBase.FloatDB) {
+    public float GetFloat(string name) {
+        foreach (XML_Float data in dataBase.FloatDB) {
             if (data.name == name) {
-                result = data.value;
-                return;
+                return data.value;
             }
         }
-        result = 0;
+        return 0;
     }
 
-    public void FindString(string name, out string result) {
-        foreach (String data in dataBase.StringDB) {
+    public string GetString(string name) {
+        foreach (XML_String data in dataBase.StringDB) {
             if (data.name == name) {
-                result = data.value;
-                return;
+                return data.value;
             }
         }
-        result = "";
+        return "";
     }
 
-    public void FindVector2(string name, out Vector2 result) {
-        foreach (Vector2D data in dataBase.Vector2DB) {
+    public Vector2 GetVector2(string name) {
+        foreach (XML_Vector2D data in dataBase.Vector2DB) {
             if (data.name == name) {
-                result = data.value;
-                return;
+                return data.value;
             }
         }
-        result = new Vector2(0,0);
+        return new Vector2(0, 0);
     }
 
-    public void FindVector3(string name, out Vector3 result) {
-        foreach (Vector3D data in dataBase.Vector3DB) {
+    public Vector3 GetVector3(string name) {
+        foreach (XML_Vector3D data in dataBase.Vector3DB) {
             if (data.name == name) {
-                result = data.value;
+                return data.value;
+            }
+        }
+        return new Vector3(0, 0, 0);
+    }
+
+
+    //SET
+    public void SetInt(string name, int value) {
+        foreach (XML_Int data in dataBase.IntDB) {
+            if (data.name == name) {
+                data.value = value;
                 return;
             }
         }
-        result = new Vector3(0, 0, 0);
+    }
+
+    public void SetFloat(string name, float value) {
+        foreach (XML_Float data in dataBase.FloatDB) {
+            if (data.name == name) {
+                data.value = value;
+                return;
+            }
+        }
+    }
+
+    public void SetString(string name, string value) {
+        foreach (XML_String data in dataBase.StringDB) {
+            if (data.name == name) {
+                data.value = value;
+                return;
+            }
+        }
+    }
+
+    public void SetVector2(string name, Vector2 value) {
+        foreach (XML_Vector2D data in dataBase.Vector2DB) {
+            if (data.name == name) {
+                data.value = value;
+                return;
+            }
+        }
+    }
+
+    public void SetVector3(string name, Vector3 value) {
+        foreach (XML_Vector3D data in dataBase.Vector3DB) {
+            if (data.name == name) {
+                data.value = value;
+                return;
+            }
+        }
     }
 
 }

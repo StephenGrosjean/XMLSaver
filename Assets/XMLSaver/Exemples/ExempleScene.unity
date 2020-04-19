@@ -371,17 +371,17 @@ PrefabInstance:
     - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
         type: 3}
       propertyPath: dataBase.IntDB.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
         type: 3}
       propertyPath: dataBase.FloatDB.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
         type: 3}
       propertyPath: dataBase.StringDB.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
         type: 3}
@@ -395,88 +395,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
         type: 3}
-      propertyPath: dataBase.ApplicationVersion.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
-        type: 3}
       propertyPath: dataBase.IntDB.Array.data[0].name
-      value: exempleInt
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
         type: 3}
       propertyPath: dataBase.IntDB.Array.data[0].value
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
-        type: 3}
-      propertyPath: dataBase.FloatDB.Array.data[0].name
-      value: exempleFloat
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
         type: 3}
       propertyPath: dataBase.StringDB.Array.data[0].name
-      value: exempleString
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
-        type: 3}
-      propertyPath: dataBase.Vector2DB.Array.data[0].name
-      value: exempleV2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
-        type: 3}
-      propertyPath: dataBase.Vector3DB.Array.data[0].name
-      value: exempleV3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
-        type: 3}
-      propertyPath: dataBase.FloatDB.Array.data[0].value
-      value: 3.1415
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
-        type: 3}
-      propertyPath: dataBase.StringDB.Array.data[0].value
-      value: HelloWorld
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
-        type: 3}
-      propertyPath: dataBase.Vector2DB.Array.data[0].value.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
-        type: 3}
-      propertyPath: dataBase.Vector2DB.Array.data[0].value.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
-        type: 3}
-      propertyPath: dataBase.Vector3DB.Array.data[0].value.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
-        type: 3}
-      propertyPath: dataBase.Vector3DB.Array.data[0].value.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
-        type: 3}
-      propertyPath: dataBase.Vector3DB.Array.data[0].value.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
-        type: 3}
-      propertyPath: dataBase.ApplicationVersion.value
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
-        type: 3}
-      propertyPath: dataBase.ApplicationVersion.Array.data[0].name
-      value: Version
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970630977651896656, guid: 27833a04ccb810d43a270c12cdf4a0bd,
-        type: 3}
-      propertyPath: dataBase.ApplicationVersion.Array.data[0].value
-      value: 0.2
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4970630977651896623, guid: 27833a04ccb810d43a270c12cdf4a0bd,
         type: 3}
@@ -1241,7 +1171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.19999695}
+  m_AnchoredPosition: {x: 0, y: -0.2000122}
   m_SizeDelta: {x: 0, y: -302.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2038767725
@@ -1316,6 +1246,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XMLVersionCheck
       objectReference: {fileID: 0}
+    - target: {fileID: 6699654745936991127, guid: 44e6f25c66bf34440a088d84e580099c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6699654745936991125, guid: 44e6f25c66bf34440a088d84e580099c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1369,6 +1304,11 @@ PrefabInstance:
     - target: {fileID: 6699654745936991125, guid: 44e6f25c66bf34440a088d84e580099c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6699654745936991126, guid: 44e6f25c66bf34440a088d84e580099c,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

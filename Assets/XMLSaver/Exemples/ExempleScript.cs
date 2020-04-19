@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExempleScript : MonoBehaviour
-{
+public class ExempleScript : MonoBehaviour {
     //Exemple Variables
     [SerializeField] private string intName;
     [SerializeField] private int intValue;
@@ -26,14 +25,14 @@ public class ExempleScript : MonoBehaviour
 
     //Find variable by name and data type
     public void Find() {
-        XMLSave.instance.FindInt(intName, out intValue);
+        intValue = XMLSave.instance.GetInt(intName);
 
-        XMLSave.instance.FindFloat(floatName, out floatValue);
+        floatValue = XMLSave.instance.GetFloat(floatName);
 
-        XMLSave.instance.FindString(stringName, out stringValue);
+        stringValue = XMLSave.instance.GetString(stringName);
 
-        XMLSave.instance.FindVector2(vector2Name, out vector2Value);
+        vector2Value = XMLSave.instance.GetVector2(vector2Name);
 
-        XMLSave.instance.FindVector3(vector3Name, out vector3Value);
+        vector3Value = XMLSave.instance.GetVector3(vector3Name);
     }
 }

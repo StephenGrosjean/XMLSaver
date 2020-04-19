@@ -4,8 +4,7 @@ using UnityEditor;
 /// <summary>
 /// XMLSave editor window
 /// </summary>
-public class XMLSaverEditor : EditorWindow
-{
+public class XMLSaverEditor : EditorWindow {
 
     public GameObject xmlSave, xmlCheck;
 
@@ -34,7 +33,7 @@ public class XMLSaverEditor : EditorWindow
         }
 
         //Spawn XMLSave and XMLChecker
-        if (GUILayout.Button("Advanced Save System")) {
+        if (GUILayout.Button("Advanced Save System (With version check)")) {
             if (!GameObject.Find("XMLSave")) {
                 GameObject saveSystem = Instantiate(xmlSave);
                 saveSystem.name = "XMLSave";
@@ -55,6 +54,5 @@ public class XMLSaverEditor : EditorWindow
             }
 
         }
-
     }
 }
