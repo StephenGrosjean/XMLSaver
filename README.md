@@ -18,6 +18,8 @@ XMLSave.instance.Load();
 XMLSave.instance.Load(string fileName);
 ```
 
+#### Get 
+
 ##### Get Int
 ```csharp
 XMLSave.instance.GetInt(string name);
@@ -43,30 +45,31 @@ XMLSave.instance.GetVector2(string name);
 XMLSave.instance.GetVector3(string name);
 ```
 
+#### Set 
 
 ##### Set Int
 ```csharp
-XMLSave.instance.GetInt(string name, int value);
+XMLSave.instance.SetInt(string name, int value);
 ```
 
 ##### Set Float
 ```csharp
-XMLSave.instance.GetFloat(string name, float value);
+XMLSave.instance.SetFloat(string name, float value);
 ```
 
 ##### Set String
 ```csharp
-XMLSave.instance.GetString(string name, string value);
+XMLSave.instance.SetString(string name, string value);
 ```
 
 ##### Set Vector2
 ```csharp
-XMLSave.instance.GetVector2(string name, vector2 value);
+XMLSave.instance.SetVector2(string name, vector2 value);
 ```
 
 ##### Set Vector3
 ```csharp
-XMLSave.instance.GetVector3(string name, vector3 value);
+XMLSave.instance.SetVector3(string name, vector3 value);
 ```
 
 
