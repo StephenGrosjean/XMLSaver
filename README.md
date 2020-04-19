@@ -1,10 +1,11 @@
-# XMLSaver ![Version](https://img.shields.io/badge/Version-0.3-brightgreen.svg) ![UnityVersion](https://img.shields.io/badge/Unity-2018.3.6f1-blue.svg)
+# XMLSaver ![Version](https://img.shields.io/badge/Version-0.4-brightgreen.svg) ![UnityVersion](https://img.shields.io/badge/Unity-2019.3.7f1-blue.svg)
 
 XMLSaver for unity
 
 
-## Usage (v0.3)
-Use the editor window to inititalize the XMLSave System (XMLSaver/inititalize)
+## Usage (v0.4)
+Use the editor window to inititalize the XMLSave System (XMLSaver/inititalize) With or without the version check
+
 
 ##### Save XML file
 ```csharp
@@ -14,34 +15,65 @@ XMLSave.instance.Save();
 ##### Load XML file
 ```csharp
 XMLSave.instance.Load();
+XMLSave.instance.Load(string fileName);
 ```
 
-##### Find Int
+##### Get Int
 ```csharp
-XMLSave.instance.FindInt(string name, out int result);
+XMLSave.instance.GetInt(string name);
 ```
 
-##### Find Float
+##### Get Float
 ```csharp
-XMLSave.instance.FindFloat(string name, out float result);
+XMLSave.instance.GetFloat(string name);
 ```
 
-##### Find String
+##### Get String
 ```csharp
-XMLSave.instance.FindString(string name, out string result);
+XMLSave.instance.GetString(string name);
 ```
 
-##### Find Vector2
+##### Get Vector2
 ```csharp
-XMLSave.instance.FindVector2(string name, out Vector2 result);
+XMLSave.instance.GetVector2(string name);
 ```
 
-##### Find Vector3
+##### Get Vector3
 ```csharp
-XMLSave.instance.FindVector3(string name, out Vector3 result);
+XMLSave.instance.GetVector3(string name);
 ```
+
+
+##### Set Int
+```csharp
+XMLSave.instance.GetInt(string name, int value);
+```
+
+##### Set Float
+```csharp
+XMLSave.instance.GetFloat(string name, float value);
+```
+
+##### Set String
+```csharp
+XMLSave.instance.GetString(string name, string value);
+```
+
+##### Set Vector2
+```csharp
+XMLSave.instance.GetVector2(string name, vector2 value);
+```
+
+##### Set Vector3
+```csharp
+XMLSave.instance.GetVector3(string name, vector3 value);
+```
+
+
 
 ## Links
+* [Version 0.4](https://github.com/StephenGrosjean/XMLSaver/blob/master/Assets/PackageBuild/V04.unitypackage)
+
 * [Version 0.3](https://github.com/StephenGrosjean/XMLSaver/blob/master/Assets/PackageBuild/V03.unitypackage)
 
 * [Version 0.2](https://github.com/StephenGrosjean/XMLSaver/blob/master/Assets/PackageBuild/V02.unitypackage)
@@ -50,6 +82,11 @@ XMLSave.instance.FindVector3(string name, out Vector3 result);
 
 
 ## Changelog
+#### v0.4
++ Changed Find<Type> to Get<Type>
++ Added Set<Type> functions
++ Added load(string fileName)
+
 #### v0.3
 + Added editor window to inititalize the XMLSaver
 

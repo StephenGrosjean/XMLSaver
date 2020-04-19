@@ -4,7 +4,7 @@ using System.Xml.Serialization;
 using System.IO;
 /// <summary>
 /// Made by Stephen Grosjean
-/// V 0.3
+/// V 0.4
 /// </summary>
 
 public class XMLSave : MonoBehaviour {
