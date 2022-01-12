@@ -72,18 +72,6 @@ XMLSave.instance.SetVector2(string name, vector2 value);
 XMLSave.instance.SetVector3(string name, vector3 value);
 ```
 
-
-
-## Links
-* [Version 0.4](https://github.com/StephenGrosjean/XMLSaver/blob/master/Assets/PackageBuild/V04.unitypackage)
-
-* [Version 0.3](https://github.com/StephenGrosjean/XMLSaver/blob/master/Assets/PackageBuild/V03.unitypackage)
-
-* [Version 0.2](https://github.com/StephenGrosjean/XMLSaver/blob/master/Assets/PackageBuild/V02.unitypackage)
-
-* [Version 0.1](https://github.com/StephenGrosjean/XMLSaver/blob/master/Assets/PackageBuild/V01.unitypackage)
-
-
 ## Changelog
 #### v0.4
 + Changed Find<Type> to Get<Type>
